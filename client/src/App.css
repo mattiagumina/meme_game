@@ -1,0 +1,86 @@
+.element-box{
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.timer-blinking{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    background-color: red;
+  }
+}
+
+.border-hold{
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+.home-title{
+  text-align: center;
+}
+
+.home-title-font-1{
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  font-family: 'Kristen ITC', cursive;
+}
+
+.home-title-font-2{
+  font-size: 9rem;
+  font-weight: 1000;
+  line-height: 1;
+  font-family: 'Kristen ITC', cursive;
+}
+
+.element-center{
+  display: flex;
+  justify-content: center;
+}
+
+.element-right{
+  display: flex;
+  justify-content: right;
+}
+
+.element-left{
+  display: flex;
+  justify-content: left;
+}
+
+.large-button{
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}
+
+.game-image-size{
+  width: 40%;
+  height: 40%;
+}
+
+.game-summary-image-size{
+  width: 40%;
+  height: 100%;
+}
+
+.image-border{
+  border: 5px solid var(--bs-warning);
+  border-radius: 10px;
+}
+
+.icon-size{
+  font-size: 100px;
+}
+
+.color-correct{
+  color: var(--bs-success);
+}
+
+.color-wrong{
+  color: var(--bs-danger);
+}

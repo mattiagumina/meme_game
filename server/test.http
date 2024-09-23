@@ -1,0 +1,42 @@
+POST http://localhost:3001/api/sessions
+Content-Type: application/json
+
+{
+    "username": "luca",
+    "password": "password"
+}
+
+###
+
+GET http://localhost:3001/api/games
+
+###
+
+GET http://localhost:3001/api/games/91/rounds
+
+###
+
+GET http://localhost:3001/api/startGame
+
+###
+
+GET http://localhost:3001/api/startRound/2
+
+###
+
+POST http://localhost:3001/api/endRound/2
+Content-Type: application/json
+
+{
+    "captionSelected": 22,
+    "captionOptions": [22, 7, 2, 36, 48, 4, 28]
+}
+
+###
+
+POST http://localhost:3001/api/games
+Content-Type: application/json
+
+{
+    "rounds": [{"memeId": 1, "score": 5}, {"memeId": 1, "score": 0}, {"memeId": 3, "score": 5}]
+}
